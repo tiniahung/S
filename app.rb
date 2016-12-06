@@ -69,7 +69,7 @@ end
 # basically after clicking on the add to slack button 
 # it'll return back with a code as a parameter in the query string
 # e.g. https://yourdomain.com/oauth?code=92618588033.110206495095.452e860e77&state=
-#https://young-spire-63809.herokuapp.com/oauth?code=110348250180.112614222660.e9573afa8b&state=
+#https://pure-ridge-90124.herokuapp.com/oauth?code=110348250180.113421724018.dc8c9edc7e&state=
 
 # we need to make a POST request to Slack's API to get a more
 # permanent token that we can use to make requests to the API
