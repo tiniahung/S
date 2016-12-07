@@ -1,6 +1,6 @@
 require "sinatra"
 require 'sinatra/activerecord'
-require './app' 
+#require './app' 
 require 'sinatra/activerecord/rake'
 require 'rake'
 require 'active_support/all'
@@ -18,7 +18,7 @@ require_relative './models/song'
 # ----------------------------------------------------------------------
 
 # Load environment variables using Dotenv. If a .env file exists, it will
-# set environment variables from that file (useful for dev environments)
+# set environment variabl es from that file (useful for dev environments)
 configure :development do
   require 'dotenv'
   Dotenv.load
