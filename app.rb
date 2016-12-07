@@ -1,5 +1,7 @@
 require "sinatra"
 require 'sinatra/activerecord'
+require './app' 
+require 'sinatra/activerecord/rake'
 require 'rake'
 require 'active_support/all'
 require "active_support/core_ext"
@@ -9,6 +11,9 @@ require 'json'
 require 'slack-ruby-client'
 require 'httparty'
 
+
+require_relative './models/playlist'
+require_relative './models/song'
 
 # ----------------------------------------------------------------------
 
