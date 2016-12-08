@@ -12,6 +12,6 @@ test:
 
 production:
   adapter: postgresql
-  database: ENV['HEROKU_POSTGRESQL_AMBER_URL']
+  database: ENV['HEROKU_DATABASE_URL']
   pool: 5
   timeout: 5000
