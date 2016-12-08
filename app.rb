@@ -4,7 +4,7 @@ require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 require 'rake'
 require 'active_support/all'
-require "active_support/core_ext"
+#require "active_support/core_ext"
 
 require 'haml'
 require 'json'
