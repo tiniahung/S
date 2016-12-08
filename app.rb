@@ -1,6 +1,5 @@
 require "sinatra"
 require 'sinatra/activerecord'
-#require './app' 
 require 'sinatra/activerecord/rake'
 require 'rake'
 require 'active_support/all'
@@ -88,7 +87,7 @@ get "/oauth" do
   slack_oauth_request = "https://slack.com/api/oauth.access"
   
   if code 
-    response = HTTParty.post slack_oauth_request, body: {client_id: ENV['110348250180.112367385653'], client_secret: ENV['9548c1935ea94c50cecf6b6788f11878'], code: code}
+    response = HTTParty.post slack_oauth_request, body: {client_id: ENV['SLACK_CLIENT_ID'], client_secret: ENV['SLACK_CLIENT_SECRET'], code: code}
     
     puts response.to_s
     
