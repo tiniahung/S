@@ -9,5 +9,4 @@ class Event < ActiveRecord::Base
     text.downcase.strip
   end    
 
-  
-end
+ end

@@ -13,6 +13,8 @@ require 'httparty'
 
 require_relative './models/playlist'
 require_relative './models/song'
+require_relative './models/team'
+require_relative './models/event'
 
 # ----------------------------------------------------------------------
 
@@ -37,7 +39,7 @@ Dir["./helpers/*.rb"].each {|file| require file }
 
 #helpers Sinatra::DateTimeHelper
 #helpers Sinatra::OfficeHoursHelper
-#helpers Sinatra::CommandsHelper
+helpers Sinatra::CommandsHelper
 
 
 # enable sessions for this project

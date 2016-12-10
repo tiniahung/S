@@ -7,7 +7,7 @@ Playlist.create!([{
   song_length: "3:29",
   user_id: "tinahung",
   team_id: "pop-musiclover"
-  
+	
 },
 {
   song_name: "I'm Yours",
